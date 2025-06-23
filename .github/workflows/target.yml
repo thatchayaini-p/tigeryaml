@@ -3,7 +3,7 @@ name: Target Workflow
 on:
   repository_dispatch:
     types: [custom-trigger]
-
+ 
 jobs:
   run-on-dispatch:
     runs-on: ubuntu-latest
