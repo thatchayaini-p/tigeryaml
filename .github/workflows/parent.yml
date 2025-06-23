@@ -1,0 +1,13 @@
+# .github/workflows/parent.yml
+name: Parent Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger-child:
+    uses: ./.github/workflows/child.yml
+    with:
+      name: Thatchayaini
